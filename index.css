@@ -20,6 +20,9 @@
   background: var(--bg-dark);
   color: black;
 }
+.view-source {
+  display: none;
+}
 html,
 body {
   width: 100%;
@@ -40,7 +43,7 @@ body {
 }
 .attribution {
   position: absolute;
-  bottom: 0;
+  bottom: 0.5rem;
   width: 100%;
   margin: auto;
   font-size: 11px;
@@ -307,5 +310,15 @@ img {
   }
   .toggle {
     grid-row: 3;
+  }
+  .view-source {
+    display: block;
+    text-align: center;
+    height: auto;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+    z-index: 2;
   }
 }
